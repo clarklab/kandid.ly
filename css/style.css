@@ -1,0 +1,99 @@
+body{margin:0; padding:55px 0 0 0; color:#302E64;}
+*{font-family:"Gotham Rounded SSm A", "Gotham Rounded SSm B";}
+
+a{color:#302E64; text-decoration: none;}
+a:hover{color:#1789FC;}
+
+.purple{color:#302E64;}
+.blue{color:#1789FC;}
+.gold{color:#FFE701;}
+.gray{background: #F3F3F3;}
+.white{background:#fff;}
+.light{opacity: .5}
+
+
+a.blue{color:#1789FC; border-bottom:2px solid #1789FC;}
+
+
+input:focus{border:0; outline: 0;}
+
+input::-webkit-input-placeholder {color:#302E64;}
+input::-moz-placeholder {color:#302E64;}
+input:-ms-input-placeholder {color:#302E64;}
+input:-moz-placeholder {color:#302E64;}
+
+input:focus::-webkit-input-placeholder {color:#F3F3F3;}
+input:focus::-moz-placeholder {color:#F3F3F3;}
+input:focus:-ms-input-placeholder {color:#F3F3F3;}
+input:focus:-moz-placeholder {color:#F3F3F3;}
+
+.btn{color:#fff; padding:10px 15px; text-decoration:none; background: #302E64; border-radius: 5px; border:0; font-size: 100%; cursor: pointer}
+.btn:hover{background:#FFE701; color:#302E64;}
+.btn.big{padding:15px 15px; font-size:120%;}
+
+.cta input{border:0; font-weight: bold; font-size:24px; padding-top: 5px; color:#1789FC;}
+.cta .btn{background: #1789FC; }
+.cta .btn:hover{background:#FFE701; color:#302E64;}
+.line-height-0{line-height: 0;}
+.block{width:100%;}
+.round{border-radius:5px;}
+
+.hero{overflow: hidden;}
+.hero .peek{padding-top:20%;}
+.hero .card{position: absolute; width:38%; left:50%; bottom:20px; z-index: 1; line-height:0; margin-left:-20%;  border:10px solid #fff; box-shadow: 0 5px 15px 0 rgba(0,0,0,0.10); transform: rotate(-1deg);}
+.hero .card img{max-width: 100%;}
+.hero .card:first-child{left:0; bottom:35px; margin-left:0; transform: rotate(-2deg); z-index: 3}
+.hero .card:last-child{left:auto; bottom:40px; right:0; margin-left:0; transform: rotate(6deg); z-index: 2}
+
+.difference h1{position: relative;}
+.difference h1:before{content:"The"; font-family: "Pacifico"; font-weight: normal; color:#1789FC; position: absolute; font-size: 60%; margin-top:-35px; padding-left: 50px}
+.cycle-slideshow img{max-width: 100%; border:10px solid #fff; box-shadow: 0 5px 15px 0 rgba(0,0,0,0.10);}
+.cycle-slideshow .image-1{}
+.cycle-slideshow .image-2{transform: rotate(6deg);}
+.cycle-slideshow .image-3{transform: rotate(-3deg);}
+.cycle-slideshow .image-4{transform: rotate(3deg);}
+.cycle-slideshow.right{position: relative; right:-50px;}
+.cycle-slideshow.left{position: relative; left:-50px;}
+
+.features{overflow: hidden;}
+.features div{border:1px solid #F3F3F3;}
+.features div img{position: absolute; margin-left:-55px; margin-top:-14px;}
+
+.tophat{background: #FFFFFF; box-shadow: 0 0 20px 0 rgba(0,0,0,0.20); z-index: 110; top:0; left:0; right:0; position: fixed; width:100%; box-sizing:border-box;}
+.tophat nav{padding-top:5px;}
+.tophat nav a{margin-left:20px;}
+
+.cover{background-size: cover; background-repeat: no-repeat; background-position:  50% 50%; padding-top:60%; position: relative; border-radius: 5px; overflow:hidden;}
+.cover:before{content:" "; background:#F3F3F3; display: block; position: absolute; top:70%; bottom: 0; left:0; right:0; }
+.cover .yellow-bg{background:rgba(255,230,1,0.9); z-index: 10; position: relative;}
+.cover .credit{position: relative; z-index: 10; padding: 8px 0 0 70px; text-align: left;}
+.cover .avatar{border-radius:200px; position: absolute; top:0; left:0;}
+
+
+@media (min-width: 40em){
+	h1{font-size: 3rem;}
+	.hero .peek{padding-top:15%;}
+	.cover{padding-top:30px; padding-left: 40% }
+	.cover:before{top:0; bottom: 0; left:55%; right:0; }
+	.cover:nth-child(even):before{top:0; bottom: 0; left:0; right:55%; }
+	.cover:nth-child(even){padding-left:0; padding-right:40%;}
+	.cover:nth-child(even) .credit{float:left;}
+	.cover .credit{float:right; width:50%;}
+
+}
+
+@media (min-width: 52em){
+	.hero .peek{padding-top:10%;}
+	.cover:before{left:60%;}
+	.cover:nth-child(even):before{left:0; right:60%;}
+}
+
+@media (min-width: 64em){
+	.hero .peek{padding-top:8%;}
+	.hero .mb2{margin-bottom:3rem;}
+}
+
+@media (max-width: 40em){
+	.difference h1:before{position: relative; margin:0 10px 0 0; padding:0;}
+	.sm-block{width:100%; display: block; text-align: center; box-sizing:border-box;}
+}
