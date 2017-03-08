@@ -40,10 +40,11 @@ input:focus:-moz-placeholder {color:#F3F3F3;}
 
 .hero{overflow: hidden;}
 .hero .peek{padding-top:20%;}
-.hero .card{position: absolute; width:38%; left:50%; bottom:20px; z-index: 1; line-height:0; margin-left:-20%;  border:10px solid #fff; box-shadow: 0 5px 15px 0 rgba(0,0,0,0.10); transform: rotate(-1deg);}
+.hero .card{position: absolute; width:38%; transition:.3s ease all; left:50%; bottom:20px; z-index: 1; line-height:0; margin-left:-20%;  border:10px solid #fff; box-shadow: 0 5px 15px 0 rgba(0,0,0,0.10); transform: rotate(-1deg);}
 .hero .card img{max-width: 100%;}
 .hero .card:first-child{left:0; bottom:35px; margin-left:0; transform: rotate(-2deg); z-index: 3}
 .hero .card:last-child{left:auto; bottom:40px; right:0; margin-left:0; transform: rotate(6deg); z-index: 2}
+.hero .card.drop{bottom:-300px;}
 
 .difference h1{position: relative;}
 .difference h1:before{content:"The"; font-family: "Pacifico"; font-weight: normal; color:#1789FC; position: absolute; font-size: 60%; margin-top:-35px; padding-left: 50px}

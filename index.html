@@ -12,6 +12,18 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.cycle2.min.js"></script>
 	<script src="js/jquery.cycle2.shuffle.min.js"></script>
+
+	<script>
+	$( document ).ready(function() {
+		$( ".hero .card" ).click(function() {
+		var drop = $(this).height();
+		var bottom = $(this).css('bottom');
+		  	$(this).css("bottom", - (drop*.5)).delay(2000).queue(function(){
+		    	$(this).css("bottom",bottom).dequeue();
+			});
+		});
+	});</script>
+	
 </head>
 
 <body>
