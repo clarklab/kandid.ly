@@ -30,7 +30,7 @@ input:focus:-moz-placeholder {color:#F3F3F3;}
 .btn{color:#fff; padding:10px 15px; text-decoration:none; background: #302E64; border-radius: 5px; border:0; font-size: 100%; cursor: pointer}
 .btn:hover{background:#FFE701; color:#302E64;}
 .btn.big{padding:15px 15px; font-size:120%;}
-.btn.outline{background: none; border:2px #302E64 solid; color:#302E64;}
+.btn.outline{background: none; border:1px #302E64 solid; color:#302E64;}
 .btn.outline:hover{color:#1789FC; border-color:#1789FC;}
 
 .cta input{border:0; font-weight: bold; font-size:24px; padding-top: 5px; color:#1789FC;}
