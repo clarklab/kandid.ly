@@ -17,13 +17,18 @@
 	$( document ).ready(function() {
 		$( ".hero .card" ).click(function() {
 		var drop = $(this).height();
-		var bottom = $(this).css('bottom');
 		  	$(this).css("bottom", - (drop*.5)).delay(2000).queue(function(){
-		    	$(this).css("bottom",bottom).dequeue();
+		    	$(this).css("bottom","").dequeue();
 			});
 		});
-	});</script>
-	
+		$( ".scroller" ).click(function() {
+		var target = $(this).attr('href');
+		$("body").animate({ scrollTop: $(target).offset().top }, 1000);
+		});
+	});
+
+	</script>
+
 </head>
 
 <body>
@@ -45,16 +50,16 @@
 </div>
 </div>
 
-<div class="hero gray pb4 px2">
+<div class="hero gray pb3 px2">
 	<div class="peek clearfix relative mb2">
 		<div class="card"><img src="images/hero-1.jpg" alt=""></div>
 		<div class="card"><img src="images/hero-2.jpg" alt=""></div>
 		<div class="card"><img src="images/hero-3.jpg" alt=""></div>
 	</div>
 <h1 class="center mt0 mb1">We take pictures.</h1>
-<h2 class="center regular mt0 mb3 blue">A personal paparazzi for your life, from just $30</h2>
+<h2 class="center regular mt0 mb3 blue">A personal paparazzi for your <br class="sm-hide md-hide lg-hide">life, from just $30</h2>
 
-<section class="cta white p2 max-width-1 mx-auto round">
+<section class="cta white p2 max-width-1 mx-auto round mb3">
 <div class="clearfix">
 <div class="col col-9">
 	<label for="zip" class="light h5">Where should we meet?</label>
@@ -63,6 +68,10 @@
 <div class="col col-3"><div class="pl2"><button class="btn big block bold">Go</button></div></div>
 </div>
 </section>
+
+<div class="clearfix center">
+<a href="#proof" class="blue bold h5 scroller">Or, see why folks love Kandid.ly</a>
+</div>
 
 </div>
 
@@ -125,7 +134,7 @@
 </div>
 </div>
 
-<div class="proof clearfix pt4 overflow-hidden px2">
+<div id="proof" class="proof clearfix pt4 overflow-hidden px2">
 	<div class="max-width-4 mx-auto center">
 	<h1>Join thousands of happy folks</h1>
 	<p class="mb3 max-width-3 mx-auto">Kandid.ly has been helping families capture special moments for years. We won <strong>Some Award</strong> and have <strong>some level of service</strong> that’s convincing.</p>
