@@ -17,7 +17,8 @@
 	$( document ).ready(function() {
 		$( ".hero .card" ).click(function() {
 		var drop = $(this).height();
-		  	$(this).css("bottom", - (drop*.4)).delay(2000).queue(function(){
+		if ($(window).width() < 500) {var drop = (drop*.3);} else {var drop = (drop*.6); };
+		  	$(this).css("bottom", - drop).delay(2000).queue(function(){
 		    	$(this).css("bottom","").dequeue();
 			});
 		});
