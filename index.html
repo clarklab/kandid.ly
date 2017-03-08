@@ -26,7 +26,18 @@
 		var target = $(this).attr('href');
 		$("body").animate({ scrollTop: $(target).offset().top }, 1000);
 		});
+		if ($(window).width() < 500) { peek(); }
 	});
+
+function peek(){
+
+	setTimeout(function () {$(".hero .card:first-child").trigger('click');}, 1000);
+	setTimeout(function () {$(".hero .card:nth-child(2)").trigger('click');}, 1200);
+	setTimeout(function () {$(".hero .card:last-child").trigger('click');}, 1400);
+
+	      	
+}
+
 
 	</script>
 
