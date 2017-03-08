@@ -17,7 +17,7 @@
 	$( document ).ready(function() {
 		$( ".hero .card" ).click(function() {
 		var drop = $(this).height();
-		  	$(this).css("bottom", - (drop*.5)).delay(2000).queue(function(){
+		  	$(this).css("bottom", - (drop*.4)).delay(2000).queue(function(){
 		    	$(this).css("bottom","").dequeue();
 			});
 		});

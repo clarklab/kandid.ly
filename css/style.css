@@ -39,7 +39,7 @@ input:focus:-moz-placeholder {color:#F3F3F3;}
 .round{border-radius:5px;}
 
 .hero{overflow: hidden;}
-.hero .peek{padding-top:20%;}
+.hero .peek{padding-top:25%;}
 .hero .card{position: absolute; width:38%; transition:.3s ease all; left:50%; bottom:20px; z-index: 1; line-height:0; margin-left:-20%;  border:10px solid #fff; box-shadow: 0 5px 15px 0 rgba(0,0,0,0.10); transform: rotate(-1deg);}
 .hero .card img{max-width: 100%;}
 .hero .card:first-child{left:0; bottom:35px; margin-left:0; transform: rotate(-2deg); z-index: 3}
@@ -101,8 +101,8 @@ input:focus:-moz-placeholder {color:#F3F3F3;}
 }
 
 @media (max-width: 40em) and (orientation: portrait){
-	.hero{padding-bottom:0; height: 90vh;}
-	.hero h1{margin-top:10vh;}
-	.hero .picker{margin:10vh 0;}
+	.hero{padding-bottom:0; height: 85vh;}
+	.hero h1{margin-top:8vh;}
+	.hero .picker{margin:8vh 0;}
 	.hero .why{position: absolute; bottom:0; left:0; right:0; width:100%; box-sizing:border-box; padding:30px 30px 50px 30px;}
 }
