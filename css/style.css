@@ -102,7 +102,7 @@ input:focus:-moz-placeholder {color:#F3F3F3;}
 
 @media (max-width: 40em) and (orientation: portrait){
 	.hero{padding-bottom:0; height: 85vh;}
-	.hero h1{margin-top:8vh;}
-	.hero .picker{margin:8vh 0;}
+	.hero h1{margin-top:6vh;}
+	.hero .picker{margin:6vh 0;}
 	.hero .why{position: absolute; bottom:0; left:0; right:0; width:100%; box-sizing:border-box; padding:30px 30px 50px 30px;}
 }
