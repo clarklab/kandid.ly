@@ -99,3 +99,8 @@ input:focus:-moz-placeholder {color:#F3F3F3;}
 	.difference h1:before{position: relative; margin:0 10px 0 0; padding:0;}
 	.sm-block{width:100%; display: block; text-align: center; box-sizing:border-box;}
 }
+
+@media (max-width: 40em) and (orientation: portrait){
+	.hero{padding-bottom:0; height: 90vh;}
+	.hero .why{position: absolute; bottom:0; left:0; right:0; width:100%; box-sizing:border-box; padding:30px 30px 50px 30px;}
+}
