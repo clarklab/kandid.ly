@@ -79,12 +79,12 @@ input:focus:-moz-placeholder {color:#F3F3F3;}
 @media (min-width: 40em){
 	h1{font-size: 3rem;}
 	.hero .peek{padding-top:15%;}
-	.cover{padding-top:30px; padding-left: 40% }
-	.cover:before{top:0; bottom: 0; left:55%; right:0; }
-	.cover:nth-child(even):before{top:0; bottom: 0; left:0; right:55%; }
-	.cover:nth-child(even){padding-left:0; padding-right:40%;}
+	.cover{padding-top:30px; padding-left: 50% }
+	.cover:before{top:0; bottom: 0; left:60%; right:0; }
+	.cover:nth-child(even):before{top:0; bottom: 0; left:0; right:60%; }
+	.cover:nth-child(even){padding-left:0; padding-right:50%;}
 	.cover:nth-child(even) .credit{float:left;}
-	.cover .credit{float:right; width:50%;}
+	.cover .credit{float:right; width:60%;}
 	.k-letter{text-transform: uppercase;}
 
 }
