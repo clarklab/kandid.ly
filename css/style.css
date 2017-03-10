@@ -1,4 +1,4 @@
-body{margin:0; padding:55px 0 0 0; color:#302E64;}
+body{margin:0; padding:0; color:#302E64;}
 *{font-family:"Gotham Rounded SSm A", "Gotham Rounded SSm B";}
 
 a{color:#302E64; text-decoration: none;}
@@ -41,7 +41,7 @@ input:focus:-moz-placeholder {color:#F3F3F3;}
 .round{border-radius:5px;}
 
 .hero{overflow: hidden;}
-.hero .peek{padding-top:25%;}
+.hero .peek{padding-top:25%; position: relative; top:55px;}
 .hero .card{position: absolute; width:38%; cursor: pointer; transition:.3s ease all; left:50%; bottom:20px; z-index: 1; line-height:0; margin-left:-20%;  border:10px solid #fff; box-shadow: 0 5px 15px 0 rgba(0,0,0,0.10); transform: rotate(-1deg);}
 .hero .card img{max-width: 100%;}
 .hero .card:first-child{left:0; bottom:35px; margin-left:0; transform: rotate(-2deg); z-index: 3}
@@ -50,6 +50,9 @@ input:focus:-moz-placeholder {color:#F3F3F3;}
 
 .difference h1{position: relative;}
 .difference h1:before{content:"The"; font-family: "Pacifico"; font-weight: normal; color:#1789FC; position: absolute; font-size: 60%; margin-top:-35px; padding-left: 50px}
+.difference .h3{font-size:12px;}
+.difference .h3.left-align{padding-left:30px;}
+.difference .h3.right-align{padding-right:20px;}
 .cycle-slideshow img{max-width: 100%; border:10px solid #fff; box-shadow: 0 5px 15px 0 rgba(0,0,0,0.10);}
 .cycle-slideshow .image-1{}
 .cycle-slideshow .image-2{transform: rotate(6deg);}
@@ -66,11 +69,14 @@ input:focus:-moz-placeholder {color:#F3F3F3;}
 .tophat nav{padding-top:5px;}
 .tophat nav a{margin-left:20px;}
 
-.cover{background-size: cover; background-repeat: no-repeat; background-position:  50% 50%; padding-top:60%; position: relative; border-radius: 5px; overflow:hidden;}
-.cover:before{content:" "; background:#F3F3F3; display: block; position: absolute; top:70%; bottom: 0; left:0; right:0; }
+.cover{background-size: cover; background-repeat: no-repeat; background-position:  50% 50%; padding-top:40%; position: relative; border-radius: 5px; overflow:hidden;}
+.cover:before{content:" "; background:#F3F3F3; display: block; position: absolute; top:50%; bottom: 0; left:0; right:0; }
+.cover .image{background-size: cover; background-repeat: no-repeat; background-position:  50% 50%; position: absolute; top:0; left:0; right:0; bottom:50%;}
+.cover:nth-child(even) .image{background-position: top right;}
 .cover .yellow-bg{background:rgba(255,230,1,0.9); z-index: 10; position: relative;}
 .cover .credit{position: relative; z-index: 10; padding: 8px 0 0 70px; text-align: left;}
 .cover .avatar{border-radius:200px; position: absolute; top:0; left:0;}
+.cover .h1{font-size:20px;}
 
 .bracket{font-size:120%; position: relative;}
 .bracket.first{left:4px;}
@@ -79,12 +85,15 @@ input:focus:-moz-placeholder {color:#F3F3F3;}
 @media (min-width: 40em){
 	h1{font-size: 3rem;}
 	.hero .peek{padding-top:15%;}
+	.hero .mb2{margin-bottom:3rem;}
 	.cover{padding-top:30px; padding-left: 50% }
 	.cover:before{top:0; bottom: 0; left:60%; right:0; }
 	.cover:nth-child(even):before{top:0; bottom: 0; left:0; right:60%; }
 	.cover:nth-child(even){padding-left:0; padding-right:50%;}
 	.cover:nth-child(even) .credit{float:left;}
+	.cover:nth-child(even) .image{left:40%; right:0;}
 	.cover .credit{float:right; width:60%;}
+	.cover .image{background-size: cover; background-repeat: no-repeat; background-position:  top left; position: absolute; top:0; left:0; right:40%; bottom:0;}
 	.k-letter{text-transform: uppercase;}
 
 }
@@ -93,11 +102,16 @@ input:focus:-moz-placeholder {color:#F3F3F3;}
 	.hero .peek{padding-top:10%;}
 	.cover:before{left:60%;}
 	.cover:nth-child(even):before{left:0; right:60%;}
+	.cover .image{background-position: 50% 50%}
+	.cover .h1{font-size:2rem;}
+	.difference .h3{font-size:18px;}
+	.difference .h3.left-align{padding-left:40px;}
+	.difference .h3.right-align{padding-right:40px;}
 }
 
 @media (min-width: 64em){
 	.hero .peek{padding-top:8%;}
-	.hero .mb2{margin-bottom:3rem;}
+	.hero .mb2{margin-bottom:3.5rem;}
 }
 
 @media (max-width: 40em){
